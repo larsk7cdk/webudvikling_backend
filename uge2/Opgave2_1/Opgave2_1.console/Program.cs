@@ -1,11 +1,15 @@
 ﻿using System;
+using Opgave2_1.console.Business;
 
 namespace Opgave2_1.console
 {
     class Program
     {
-        static void Main(string[] args)
+        private readonly ICurrencyConverter _currencyConverter = new CurrencyConverter();
+
+        static void Main()
         {
+
             Console.WriteLine("Hello World!");
         }
     }
