@@ -39,10 +39,10 @@ namespace Opgave2_1.test
         public void KrToEuro()
         {
             // Arrange 
-            const double expected = 74.5;
+            const double expected = 10;
 
             // Act
-            var actual = _sut.KrToEuro(10);
+            var actual = _sut.KrToEuro(74.5);
 
             // Assert
             Assert.AreEqual(expected, actual, "Kroner til Euro");
@@ -52,10 +52,10 @@ namespace Opgave2_1.test
         public void EuroToKr()
         {
             // Arrange 
-            const double expected = 3;
+            const double expected = 22.35;
 
             // Act
-            var actual = _sut.EuroToKr(22.35);
+            var actual = _sut.EuroToKr(3);
 
             // Assert
             Assert.AreEqual(expected, actual, "Euro til Kroner");
@@ -67,14 +67,13 @@ namespace Opgave2_1.test
         {
             // Arrange 
             _sut.ChangeExchangeRate(5);
-            const double expected = 50;
+            const double expected = 10;
 
             // Act
-            var actual = _sut.KrToEuro(10);
+            var actual = _sut.KrToEuro(50);
 
             // Assert
             Assert.AreEqual(expected, actual, "Kroner til Euro med ny valuta kurs");
         }
-
     }
 }

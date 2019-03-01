@@ -25,8 +25,8 @@ namespace Opgave2_1.console.Business
 
         public void ChangeExchangeRate(double newExchangeRate) => ExchangeRate = newExchangeRate;
 
-        public double KrToEuro(double amount) => Math.Round(amount * ExchangeRate, 2);
+        public double KrToEuro(double amount) => Math.Round(amount / ExchangeRate, 2);
 
-        public double EuroToKr(double amount) => Math.Round(amount / ExchangeRate, 2);
+        public double EuroToKr(double amount) => Math.Round(amount * ExchangeRate, 2);
     }
 }
