@@ -12,4 +12,8 @@
     <PackageReference Include="MSTest.TestFramework" Version="1.3.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Opgave2_2.console\Opgave2_2.console.csproj" />
+  </ItemGroup>
+
 </Project>

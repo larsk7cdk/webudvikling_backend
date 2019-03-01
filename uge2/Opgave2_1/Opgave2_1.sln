@@ -3,9 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Opgave2_1.console", "Opgave2_1.console\Opgave2_1.console.csproj", "{8E0804E2-0895-434D-B7A5-E495FB673DE3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Opgave2_1.console", "Opgave2_1.console\Opgave2_1.console.csproj", "{8E0804E2-0895-434D-B7A5-E495FB673DE3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Opgave2_1.test", "Opgave2_1.test\Opgave2_1.test.csproj", "{4A7783CD-51F4-436C-99B7-E43453F0F04C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Opgave2_1.test", "Opgave2_1.test\Opgave2_1.test.csproj", "{4A7783CD-51F4-436C-99B7-E43453F0F04C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DE9FCFF8-DB7E-47EF-86C6-A4FBFCC15631}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
