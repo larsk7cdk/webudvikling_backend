@@ -25,6 +25,7 @@ namespace Opgave2_1.console
 
         private static double ParseExchangeRate(double actualExchangeRate)
         {
+            double parsedExchangeRate;
             while (true)
             {
                 Console.WriteLine($"Angiv kurs. Tast <Enter> for at benytte aktuel kurs på {actualExchangeRate}.");
@@ -35,7 +36,6 @@ namespace Opgave2_1.console
                     return actualExchangeRate;
                 }
 
-                double parsedExchangeRate;
                 if (!double.TryParse(exchangeRate, out parsedExchangeRate))
                 {
                     Console.WriteLine("Ugyldig indtastning!");
@@ -71,6 +71,7 @@ namespace Opgave2_1.console
 
         private static double ParseAmount()
         {
+            double parsedAmount;
             while (true)
             {
                 Console.WriteLine(("Angiv beløb der skal veksles"));
@@ -82,7 +83,6 @@ namespace Opgave2_1.console
                     continue;
                 }
 
-                double parsedAmount;
                 if (!double.TryParse(amount, out parsedAmount))
                 {
                     Console.WriteLine("Ugyldig indtastning!");
